@@ -2,7 +2,7 @@
 * @Author: Mehdi-H
 * @Date:   2015-06-28 20:16:34
 * @Last Modified by:   Mehdi-H
-* @Last Modified time: 2015-06-28 20:16:39
+* @Last Modified time: 2015-06-28 20:25:58
 */
 
 /*jslint node: true */
@@ -14,4 +14,4 @@ var httpServer = http.createServer(function(req,res){
 	res.end('Hello World');
 });
 
-httpServer.listen(process.env.PORT || '1337');
+httpServer.listen(process.env.OPENSHIFT_NODEJS_PORT || '1337');
